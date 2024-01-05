@@ -6,60 +6,17 @@ The google colab file link for yolov8 object detection and tracking is provided 
 
 [`Google Colab File`](https://colab.research.google.com/drive/1tmk_kEquRz6d18LwyMpiwUkoQ2Bcxa4b?usp=sharing)
 
-## Steps to run Code
-
-- Clone the repository
-```
-git clone https://github.com/MuhammadMoinFaisal/YOLOv8-DeepSORT-Object-Tracking.git
-```
-- Goto the cloned folder.
-```
-cd YOLOv8-DeepSORT-Object-Tracking
-```
-- Install the dependecies
-```
-pip install -e '.[dev]'
-
-```
-
-- Setting the Directory.
-```
-cd ultralytics/yolo/v8/detect
-
-```
-- Downloading the DeepSORT Files From The Google Drive 
-```
-
-https://drive.google.com/drive/folders/1kna8eWGrSfzaR6DtNJ8_GchGgPMv3VC8?usp=sharing
-```
-- After downloading the DeepSORT Zip file from the drive, unzip it go into the subfolders and place the deep_sort_pytorch folder into the yolo/v8/detect folder
-
-- Downloading a Sample Video from the Google Drive
-```
-gdown "https://drive.google.com/uc?id=1rjBn8Fl1E_9d0EMVtL24S9aNQOJAveR5&confirm=t"
-```
-
-- Run the code with mentioned command below.
-
-- For yolov8 object detection + Tracking
-```
-python predict.py model=yolov8l.pt source="test3.mp4" show=True
-```
-- For yolov8 object detection + Tracking + Vehicle Counting
-- Download the updated predict.py file from the Google Drive and place it into ultralytics/yolo/v8/detect folder 
-- Google Drive Link
-```
-https://drive.google.com/drive/folders/1awlzTGHBBAn_2pKCkLFADMd1EN_rJETW?usp=sharing
-```
-- For yolov8 object detection + Tracking + Vehicle Counting
-```
-python predict.py model=yolov8l.pt source="test3.mp4" show=True
-```
-
 ### RESULTS
 
 #### Comparison between Implementation of YOLOv8 + TensorRT with YOLOv8 + Pytorch
+1. Performance (FPS)
 ![image](https://github.com/EricSiaSiewWei/risc-v-object-tracking/assets/136912487/52640fe4-42c5-439d-a3d8-e9cd6f31b6ad)
+2. Resource Utilization (glances)
+```
+sudo apt-get install glances
+glances
+```
+![image](https://github.com/EricSiaSiewWei/risc-v-object-tracking/assets/136912487/2113237b-503c-4705-b1e5-0700386cbc02)
 
 
 ### Watch the Complete Step by Step Explanation
